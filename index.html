@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stress Reliver - Snake</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="hud">
+        <h1>Stress Reliver - Snake</h1>
+        <div class="score">
+          <span class="label">Score</span>
+          <span id="score">0</span>
+        </div>
+      </header>
+
+      <section class="board">
+        <canvas id="game" width="400" height="400" aria-label="Snake game"></canvas>
+        <div id="overlay" class="overlay" aria-live="polite"></div>
+      </section>
+
+      <section class="controls">
+        <button id="restart" class="btn">Restart</button>
+        <button id="pause" class="btn" aria-pressed="false">Pause</button>
+      </section>
+
+      <section class="touch" aria-label="On-screen controls">
+        <button class="touch-btn" data-dir="up" aria-label="Up">▲</button>
+        <div class="touch-row">
+          <button class="touch-btn" data-dir="left" aria-label="Left">◀</button>
+          <button class="touch-btn" data-dir="down" aria-label="Down">▼</button>
+          <button class="touch-btn" data-dir="right" aria-label="Right">▶</button>
+        </div>
+      </section>
+
+      <p class="help">
+        Controls: Arrow keys or WASD. Space to pause, R to restart.
+      </p>
+    </main>
+
+    <script type="module" src="./snake.js"></script>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
