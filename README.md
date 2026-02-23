@@ -6,7 +6,7 @@ Classic Snake: grid movement, growing snake, food spawn, score, game-over, resta
 1. Open `/Users/anask/Documents/New project/index.html` in a browser.
 2. Or start a dev server:
 ```bash
-cd "/Users/anask/Documents/New project"
+cd "/Users/(usernam)/Documents/New project"
 python3 -m http.server 8000
 ```
 Then open `http://localhost:8000`.
